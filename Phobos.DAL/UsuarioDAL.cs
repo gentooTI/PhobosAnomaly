@@ -156,7 +156,7 @@ namespace Phobos.DAL
             {
                 Conectar();
                 cmd = new MySqlCommand("SELECT * FROM `usuario` WHERE idUsuario = @idUsuario", conn);
-                cmd.Parameters.AddWithValue("dUsuario", idUsuario);
+                cmd.Parameters.AddWithValue("idUsuario", idUsuario);
                 dr = cmd.ExecuteReader();
                 UsuarioDTO obj = null;
                 if (dr.Read())
@@ -167,7 +167,7 @@ namespace Phobos.DAL
                     obj.EmailUsuario = dr["EmailUsuario"].ToString();
                     obj.SenhaUsuario = dr["SenhaUsuario"].ToString();
                     obj.DataNascUsuario = Convert.ToDateTime(dr["DataNascUsuario"]);
-                    obj.UsuarioTp = Convert.ToInt32(dr["UQsuarioTp"]);
+                    obj.UsuarioTp = Convert.ToInt32(dr["UsuarioTp"]);
                 }
                 return obj;
             }

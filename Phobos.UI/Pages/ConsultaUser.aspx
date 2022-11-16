@@ -6,9 +6,9 @@
     <div class="geral">
         <asp:GridView runat="server" ID="dgv1" GridLines="None" AutoGenerateColumns="false" BackColor="Silver">
             <columns>
-                <asp:BoundField DataField="NomeUsuario" HeardText="Name" />
-                <asp:BoundField DataField="EmailUsuario" HeardText="Email" />
-                <asp:BoundField DataField="Descricao" HeardText="Description" />
+                <asp:BoundField DataField="NomeUsuario" HeaderText="Name" />
+                <asp:BoundField DataField="EmailUsuario" HeaderText="Email" />
+                <asp:BoundField DataField="Descricao" HeaderText="Descrição" />
             </columns>
         </asp:GridView>
     </div>

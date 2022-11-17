@@ -42,7 +42,7 @@ namespace Phobos.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT `titulo`, `genero`, `produtora`, `urlImagem` `descricao` FROM `filme` INNER JOIN `classificacao` ON filme.idClassificacao = classificacao.idClassificacao", conn);
+                cmd = new MySqlCommand("SELECT `titulo`, `genero`, `produtora`, `urlImagem`, `descricao` FROM `filme` INNER JOIN `classificacao` ON filme.idClassificacao = classificacao.idClassificacao", conn);
                 dr = cmd.ExecuteReader();
                 //ponteiro - Lista vazia
                 List<FilmeListDTO> Lista = new List<FilmeListDTO>();

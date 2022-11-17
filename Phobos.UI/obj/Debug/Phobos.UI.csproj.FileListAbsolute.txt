@@ -51,16 +51,8 @@ C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\roslyn\vbc.rsp
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\roslyn\VBCSCompiler.exe
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.csproj.AssemblyReference.cache
-C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.csproj.CoreCompileInputs.cache
-C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.csproj.CopyComplete
-C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.dll
-C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.pdb
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.BLL.dll
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.DTO.dll
-C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.BLL.pdb
-C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.DTO.pdb
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.DAL.dll
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\MySql.Data.dll
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Google.Protobuf.dll
@@ -72,6 +64,9 @@ C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\System.Buffers.dll
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\K4os.Compression.LZ4.dll
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\K4os.Hash.xxHash.dll
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\System.Numerics.Vectors.dll
+C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.BLL.pdb
+C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.DTO.pdb
+C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.DAL.pdb
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\Phobos.DAL.dll.config
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\MySql.Data.xml
@@ -84,3 +79,8 @@ C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\System.Buffers.xml
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\K4os.Compression.LZ4.xml
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\K4os.Hash.xxHash.xml
 C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\bin\System.Numerics.Vectors.xml
+C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.csproj.AssemblyReference.cache
+C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.csproj.CoreCompileInputs.cache
+C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.csproj.CopyComplete
+C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.dll
+C:\Users\matheus.bmelo3\Desktop\PhobosAnomaly\Phobos.UI\obj\Debug\Phobos.UI.pdb

@@ -15,7 +15,7 @@ namespace Phobos.UI
             {
                 Response.Redirect("../login.aspx");
             }
-            lblMessage.Text = "Bem-vindo "+Session+" a Phobos";
+            lblMessage.Text = "Bem-vindo " + Session["Usuario"] +" a Phobos";
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)

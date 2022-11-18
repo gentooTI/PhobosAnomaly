@@ -32,7 +32,7 @@
                             <span>Enxame</span>
                         </a>
                         <ul class="navbar open">
-                            <li><asp:Label ID="lblMessage" runat="server" ForeClolor="White" Text="Session"></asp:Label></li>
+                            <li><asp:Label ID="lblMessage" runat="server" ForeColor="White" Text="Session"></asp:Label></li>
                             <a class="btnMenu"><i class='bx bx-menu'></i></a>
                             <li><a href="#user">User</a></li>
                             <li><a href="#movie">Movie</a></li>

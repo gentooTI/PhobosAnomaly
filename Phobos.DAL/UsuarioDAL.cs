@@ -166,8 +166,8 @@ namespace Phobos.DAL
                     obj.NomeUsuario = dr["NomeUsuario"].ToString();
                     obj.EmailUsuario = dr["EmailUsuario"].ToString();
                     obj.SenhaUsuario = dr["SenhaUsuario"].ToString();
-                    obj.DataNascUsuario = Convert.ToDateTime(dr["DataNascUsuario"]);
-                    obj.UsuarioTp = Convert.ToInt32(dr["UsuarioTp"]);
+                    obj.DataNascUsuario = dr["DataNascUsuario"].ToString();
+                    obj.UsuarioTp = dr["UsuarioTp"].ToString();
                 }
                 return obj;
             }
@@ -175,6 +175,44 @@ namespace Phobos.DAL
             {
 
                 throw new Exception ("Erro ao buscar usuario"+ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
+        //Litar Admin
+        //read
+        public List<UsuarioDTO> ListarAdmin()
+        {
+            try
+            {
+                Conectar();
+                cmd = new MySqlCommand("SELECT idUsuario,NomeUsuario,SenhaUsuario,EmailUsuario,DataNascUsuario,Descricao FROM usuario INNER JOIN TipoUsuario ON usuario.UsuarioTp = TipoUsuario.idTipoUsuario", conn);
+                dr = cmd.ExecuteReader();
+                //ponteiro - lista vazia
+                List<UsuarioDTO> Lista = new List<UsuarioDTO>();
+                while (dr.Read())
+                {
+                    UsuarioDTO obj = new UsuarioDTO();
+                    obj.idUsuario = Convert.ToInt32(dr["idUsuario"]);
+                    obj.NomeUsuario = dr["NomeUsuario"].ToString();
+                    obj.EmailUsuario = dr["EmailUsuario"].ToString();
+                    obj.SenhaUsuario = dr["SenhaUsuario"].ToString();
+                    obj.DataNascUsuario = Convert.ToDateTime(dr["DataNascUsuario"]).ToString("dd/mm/yyyy");
+                    obj.UsuarioTp = dr["Descricao"].ToString();
+
+                    //adiciar a lista
+                    Lista.Add(obj);
+                }
+                return Lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Erro ao listar registros" + ex.Message);
             }
             finally
             {

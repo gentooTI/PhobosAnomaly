@@ -42,11 +42,12 @@ namespace Phobos.UI
                     switch (objModelo.UsuarioTp)
                     {
                         case 1:
-                            lblMessage.Text = "Admin";
+                            Session["Usuario"] = txtNome.Text.Trim().ToUpper();
+                            Response.Redirect("Pages/IndexAdmin.aspx");
                             Limpar();
                             break;
                         case 2:
-                            Session["Usuario"] = txtNome.Text.Trim();
+                            Session["Usuario"] = txtNome.Text.Trim().ToUpper();
                             Response.Redirect("Pages/IndexUser.aspx");
                             lblMessage.Text = "User";
                             Limpar();

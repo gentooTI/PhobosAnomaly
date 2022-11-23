@@ -595,18 +595,3 @@ footer{
 }
 
 /* #endregion login */
-
-/* #region Defaut User*/
-.base{
-    width: 100%;
-    min-height: 800px;
-    padding: 70px;
-    background-color: #1d1d1d;
-}
-
-.base table{
-    text-align: center;
-    color: aliceblue;
-    border-bottom: 1px solid aliceblue;
-}
-/* #endregion */

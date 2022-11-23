@@ -56,5 +56,11 @@ namespace Phobos.BLL
             return objBLL.BuscarPorId(objModelo);
         }
 
+        //Listar Admin
+        public List<UsuarioDTO> ListarUsuario()
+        {
+            return objBLL.ListarAdmin();
+        }
+
     }
 }

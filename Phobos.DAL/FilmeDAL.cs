@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Phobos.DAL
 {
-    public class FilmeDAL:Conexao
+    public class FilmeDAL : Conexao
     {
         //Create
         public void Cadastrar(FilmeDTO objCad)
@@ -135,7 +135,7 @@ namespace Phobos.DAL
                     obj.Genero = dr["genero"].ToString();
                     obj.Produtora = dr["produtora"].ToString();
                     obj.UrlImagem = dr["urlImagem"].ToString();
-                    obj.idClassificacao = Convert.ToInt32(dr["idClassificacao"]);
+                    obj.idClassificacao = dr["idClassificacao"].ToString();
                 }
                 return obj;
             }
@@ -149,5 +149,42 @@ namespace Phobos.DAL
                 Desconectar();
             }
         }
+        //Listar Admin
+        public List<FilmeDTO> ListarFilmeAdmin()
+        {
+            try
+            {
+                Conectar();
+                cmd = new MySqlCommand("SELECT idFilme,titulo, genero, produtora, urlImagem, descricao FROM Filme INNER JOIN Classificacao ON filme.idClassificacao = classificacao.idClassificacao", conn);
+                dr = cmd.ExecuteReader();
+                //ponteiro - lista vazia
+                List<FilmeDTO> Lista = new List<FilmeDTO>();
+                while (dr.Read())
+                {
+                    FilmeDTO obj = new FilmeDTO();
+                    obj.idFilme = Convert.ToInt32(dr["idFilme"]);
+                    obj.Titulo = dr["titulo"].ToString();
+                    obj.Genero = dr["genero"].ToString();
+                    obj.Produtora = dr["produtora"].ToString();
+                    obj.UrlImagem = dr["urlImagem"].ToString();
+                    obj.idClassificacao = dr["descricao"].ToString();
+
+                    //adiciar a lista
+                    Lista.Add(obj);
+                }
+                return Lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Erro ao listar registros !!" + ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
     }
 }

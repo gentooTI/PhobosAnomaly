@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DefaultAdmin.Master" AutoEventWireup="true" CodeBehind="IndexAdmin.aspx.cs" Inherits="Phobos.UI.Pages.IndexAdmin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="css/styleP.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="base">
@@ -82,7 +83,7 @@
                         </asp:RadioButtonList>
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:RadioButtonList runat="server" ID="RadioButtonList1">
+                        <asp:RadioButtonList runat="server" ID="rbl1">
                             <asp:ListItem Value="1" Text="Administrador" />
                             <asp:ListItem Value="2" Text="Outros" />
                         </asp:RadioButtonList>
@@ -112,7 +113,7 @@
 
         </asp:GridView>
         <br />
-        <asp:Label runat="server" ID="lblMessage" Text="Label"/>
+        <asp:Label runat="server" ID="lblMessage" ForeColor="White" Text="Label"/>
 
     </div>
 </asp:Content>

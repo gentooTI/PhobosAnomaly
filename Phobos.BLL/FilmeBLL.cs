@@ -37,5 +37,11 @@ namespace Phobos.BLL
         {
             return objBLL.BuscarporId(objModelo);
         }
+
+        //Listar Admin
+        public List<FilmeDTO> ListarFilmeAdmin()
+        {
+            return objBLL.ListarFilmeAdmin();
+        }
     }
 }

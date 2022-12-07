@@ -200,7 +200,8 @@ namespace Phobos.DAL
                     obj.NomeUsuario = dr["NomeUsuario"].ToString();
                     obj.EmailUsuario = dr["EmailUsuario"].ToString();
                     obj.SenhaUsuario = dr["SenhaUsuario"].ToString();
-                    obj.DataNascUsuario = Convert.ToDateTime(dr["DataNascUsuario"]).ToString("dd/MM/yyyy");
+                    //
+                    //obj.DataNascUsuario = Convert.ToDateTime(dr["DataNascUsuario"]).ToString("dd/MM/yyyy");
                     obj.UsuarioTp = dr["Descricao"].ToString();
 
                     //adiciar a lista

@@ -49,14 +49,13 @@ namespace Phobos.UI
                         case 2:
                             Session["Usuario"] = txtNome.Text.Trim().ToUpper();
                             Response.Redirect("Pages/IndexUser.aspx");
-                            lblMessage.Text = "User";
                             Limpar();
                             break;
                     }
                 }
                 else
                 {
-                    lblMessage.Text = "Deu Problema de novo";
+                    lblMessage.Text = "Deu Problema na Autenticação";
                 }
             }
             catch (Exception ex)

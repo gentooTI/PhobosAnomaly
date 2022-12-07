@@ -89,7 +89,7 @@ namespace Phobos.UI.Pages
             //iniciando session
             if (Session["Usuario"] == null)
             {
-                Response.Redirect("Login.aspx");
+                Response.Redirect("~/Login.aspx");
             }
         }
 
@@ -100,7 +100,7 @@ namespace Phobos.UI.Pages
                 if (ValidaPage())
                 {
 
-                objModeloUser.NomeUsuario = (dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).Text.Trim();
+                objModeloUser.NomeUsuario = (dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).Text.Trim().ToUpper();
                 objModeloUser.SenhaUsuario = (dgv1.FooterRow.FindControl("txtSenhaUsuarioFooter") as TextBox).Text.Trim();
                 objModeloUser.EmailUsuario = (dgv1.FooterRow.FindControl("txtEmailUsuarioFooter") as TextBox).Text.Trim();
 

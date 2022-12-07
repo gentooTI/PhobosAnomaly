@@ -124,7 +124,7 @@ namespace Phobos.DAL
             {
                 Conectar();
                 cmd = new MySqlCommand("SELECT `NomeUsuario`, `SenhaUsuario`, `UsuarioTp` FROM usuario WHERE NomeUsuario = @NomeUsuario AND SenhaUsuario = @SenhaUsuario", conn);
-                cmd.Parameters.AddWithValue("NomeUsuario",objNome);
+                cmd.Parameters.AddWithValue("@NomeUsuario",objNome);
                 cmd.Parameters.AddWithValue("@SenhaUsuario",objSenha);
                 dr = cmd.ExecuteReader();
                 UsuarioAutenticaDTO obj = null;
@@ -189,7 +189,7 @@ namespace Phobos.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT idUsuario,NomeUsuario,SenhaUsuario,EmailUsuario,DataNascUsuario,Descricao FROM usuario INNER JOIN TipoUsuario ON usuario.UsuarioTp = TipoUsuario.idTipoUsuario", conn);
+                cmd = new MySqlCommand("SELECT idUsuario,NomeUsuario,SenhaUsuario,EmailUsuario,DataNascUsuario,Descricao FROM usuario INNER JOIN tipoUsuario ON usuario.UsuarioTp = tipoUsuario.idTipoUsuario", conn);
                 dr = cmd.ExecuteReader();
                 //ponteiro - lista vazia
                 List<UsuarioDTO> Lista = new List<UsuarioDTO>();
